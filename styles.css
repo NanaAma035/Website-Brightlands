@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure a minimum height of the viewport */
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    color: black;
+    position: relative;
+    margin-inline: 30px;
+}
+
+h1{
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.home-button {
+    text-decoration: none;
+    color: white;
+}
+
+.site-title {
+    margin: 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding: 90px;
+    flex: 1; /* Allow the gallery to take up remaining space */
+
+}
+
+.gallery a {
+    display: block;
+    overflow: hidden; /* Ensure the overflow is hidden for the hover effect */
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Add a transition for smooth hover effect */
+}
+
+/* Resize the height of a specific image */
+.gallery a[href="ai3.html"] img {
+    height: 186px; /* Adjust the height as needed */
+}
+
+/* Resize the height of a specific image */
+.gallery a[href="ai4.html"] img {
+    height: 186px; /* Adjust the height as needed */
+}
+
+/* Resize the height of a specific image */
+.gallery a[href="ai5.html"] img {
+    height: 186px; /* Adjust the height as needed */
+}
+
+/* Hover effect for the images */
+.gallery a:hover img {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2px;
+    text-align: center;
+}
